@@ -1,54 +1,68 @@
-
-/* Hero Section */
-.hero {
-    background-image: url('../images/back-pic3.JPG');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image within the hero section */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 100px 0;
-    text-align: center;
-    color: white;
-}
-
-
-.hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.btn {
-    padding: 10px 20px;
-    background-color: #007acc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #005f99;
-}
-
-/* Typography and Font Improvements */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+    background-color: #ffffff; /* Set the background to white */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #222;
+/* Header */
+nav {
+    background-color: #001f3f; /* Navy blue header */
+    padding: 15px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-p {
-    margin-bottom: 20px;
+nav a {
+    margin: 0 15px;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007acc; /* Lighter blue on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('{{ site.baseurl }}/assets/images/back-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff; /* White text over the hero image */
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    background-color: #ffffff; /* White button */
+    color: #001f3f; /* Navy blue text */
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #001f3f; /* Navy blue border */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #001f3f; /* Navy blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #001f3f; /* Navy blue footer */
+    color: #ffffff; /* White text */
+    border-top: 1px solid #e7e7e7;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
 }
 
 /* Container */
@@ -58,68 +72,25 @@ p {
     padding: 20px;
 }
 
-/* General Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    line-height: 1.6;
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.hero-content h1, .hero-content p, .btn {
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-h1, h2, h3, h4 {
-    color: #333;
-    font-weight: bold;
+nav a, footer p {
+    animation: fadeIn 1s ease-in-out;
 }
 
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    padding: 10px 0;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #007acc;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #005f99;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #fff;
-    border-top: 1px solid #e7e7e7;
-    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    font-size: 14px;
-    color: #777;
-}
-
-footer a {
-    color: #007acc;
+/* Smooth transitions for links and buttons */
+a, .btn {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
