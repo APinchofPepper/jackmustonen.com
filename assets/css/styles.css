@@ -102,7 +102,12 @@ footer .social-links a {
     display: inline-block;
     font-size: 24px;
     color: #ffffff;
+    text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-links a:visited {
+    color: #ffffff;
 }
 
 footer .social-links a:hover {
