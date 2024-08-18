@@ -5,14 +5,18 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff; /* Set the background to white */
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
 nav {
-    background-color: #001f3f; /* Navy blue header */
+    background-color: #003366; /* Navy blue header */
     padding: 15px 0;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
 nav a {
@@ -36,21 +40,23 @@ nav a:hover {
     padding: 100px 0;
     text-align: center;
     color: #ffffff; /* White text over the hero image */
+    width: 100%;
+    margin: 0;
 }
 
 /* Buttons */
 .btn {
     padding: 10px 20px;
     background-color: #ffffff; /* White button */
-    color: #001f3f; /* Navy blue text */
+    color: #003366; /* Navy blue text */
     text-decoration: none;
     border-radius: 5px;
-    border: 2px solid #001f3f; /* Navy blue border */
+    border: 2px solid #003366; /* Navy blue border */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #001f3f; /* Navy blue background on hover */
+    background-color: #003366; /* Navy blue background on hover */
     color: #ffffff; /* White text on hover */
 }
 
@@ -58,16 +64,18 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #001f3f; /* Navy blue footer */
+    background-color: #003366; /* Navy blue footer */
     color: #ffffff; /* White text */
     border-top: 1px solid #e7e7e7;
     box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
     font-size: 14px;
+    width: 100%;
+    margin: 0;
 }
 
 /* Container */
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
