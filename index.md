@@ -1,6 +1,7 @@
 ---
-title: Welcome to My Portfolio
+layout: default
+title: Home
 ---
 
-# Hello, I'm Jack Mustonen
-Welcome to my personal portfolio where I showcase my skills, resume, and CS projects.
+# Welcome to My Portfolio
+Hi, I'm **Jack Mustonen**, a passionate software developer focused on creating impactful solutions. Explore my work, learn more about me, and get in touch!
