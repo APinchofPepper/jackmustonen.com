@@ -3,5 +3,12 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Portfolio
-Hi, I'm **Jack Mustonen**, a passionate software developer focused on creating impactful solutions. Explore my work, learn more about me, and get in touch!
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Jack Mustonen's Portfolio</h1>
+        <p>Software Developer | Problem Solver | Innovator</p>
+        <a href="{{ site.baseurl }}/portfolio/" class="btn">Explore My Work</a>
+    </div>
+</section>
+
+# Content goes here
