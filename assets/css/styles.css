@@ -1,7 +1,7 @@
 
 /* Hero Section */
 .hero {
-    background-image: url('{{ site.baseurl }}/assets/images/back-pic.jpg');
+    background-image: url('{{ site.baseurl }}/assets/images/back-pic3.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 0;
