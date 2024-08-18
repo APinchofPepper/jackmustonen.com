@@ -1,8 +1,8 @@
 title: Jack Mustonen's Portfolio
 description: Personal Portfolio Website
 theme: minima
-baseurl: "/jackmustonen.com" 
-url: "https:/apinchofpepper.github.io"
+baseurl: "" 
+url: "https://jackmustonen.com"
 author: Jack Mustonen
 
 # Custom CSS
