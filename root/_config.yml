@@ -1,0 +1,14 @@
+title: Jack Mustonen's Portfolio
+description: Personal Portfolio Website
+theme: minima
+baseurl: "" 
+url: "https://yourusername.github.io"
+author: Jack Mustonen
+
+# Custom CSS
+sass:
+  style: compressed
+
+# Include custom CSS
+include:
+  - assets/css/styles.css
