@@ -1,7 +1,7 @@
 
 /* Hero Section */
 .hero {
-    background-image: url('https://apinchofpepper.github.io/jackmustonen.com/assets/images/back-pic3.jpg');
+    background-image: url('https://via.placeholder.com/1920x960');
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image within the hero section */
     background-repeat: no-repeat; /* Prevents the image from repeating */
