@@ -2,12 +2,14 @@
 /* Hero Section */
 .hero {
     background-image: url('{{ site.baseurl }}/assets/images/back-pic3.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image within the hero section */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     padding: 100px 0;
     text-align: center;
     color: white;
 }
+
 
 .hero-content h1 {
     font-size: 48px;
