@@ -44,9 +44,24 @@ nav a:hover {
     margin: 0;
 }
 
+.hero-content h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #003366;
+}
+
 /* Buttons */
 .btn {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #ffffff; /* White button */
     color: #003366; /* Navy blue text */
     text-decoration: none;
