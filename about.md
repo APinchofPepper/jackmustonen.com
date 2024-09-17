@@ -5,6 +5,8 @@ permalink: /about/
 ---
 
 # About Me
-I'm Jack Mustonen, a software developer with a background in [your background]. I specialize in [your specialties] and have a passion for [your passions]. When I'm not coding, you can find me [your hobbies].
+Hi! I’m Jack Mustonen, a fourth-year Computer Science student at Oregon State University with a passion for solving complex problems and developing innovative software solutions. My technical expertise spans a variety of programming languages, including Python, C++ and C, as well as experience with data management through SQL and NoSQL databases. I have a strong background in using industry-standard software tools such as Microsoft Excel, Word, and PowerPoint, as well as project management and collaboration tools.
 
-Feel free to explore my portfolio to see some of the projects I've worked on.
+I have hands-on experience in both process engineering and data processing from my internship at Jacobs Engineering, where I supported the development of semiconductor fabrication facilities and became proficient in platforms like Bluebeam, Navisworks, Procore, and Revit. I’ve since expanded my skills into data science, financial modeling, and artificial intelligence, building projects that combine cutting-edge technology with real-world applications.
+
+Feel free to explore my projects, or reach out to connect!
