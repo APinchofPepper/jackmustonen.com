@@ -11,4 +11,3 @@ title: Home
     </div>
 </section>
 
-# Content goes here
