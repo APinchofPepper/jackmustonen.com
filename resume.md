@@ -16,8 +16,8 @@ permalink: /resume/
 *August 2021 - May 2023*  
 
 ## Experience
-**Jacobs Engineering, Portland, OR**  
-*Process Engineering Intern*  
+**Jacobs Engineering, Portland, OR**
+*Process Engineering Intern*
 *May 2022 - September 2022*  
 - Supported services during construction for semiconductor fabrication facilities (Fab) in Arizona (Confidential Client)
 - Conducted work within the following software platforms: Bluebeam, Navisworks, Procore, Pipeflo, Autodesk ProjectWise, Revit, excel, word, and PowerPoint
