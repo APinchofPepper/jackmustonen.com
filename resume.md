@@ -37,12 +37,11 @@ creation of PowerPoint presentations)
 - Demonstrate business development skills by expanding product sales into eight New Seasons Grocery Stores, resulting in gross annual revenue of over $156,000
 
 ## Skills
-- Proficient in Microsoft Word, Excel, and PowerPoint
 - Advanced knowledge and understanding of Python and C++
 - Experience with SQL and NoSQL databases
 - Experience with Data Acquisition Systems
-- Knowledge of AI and ML techniques (including neural networks, k-means clustering, and statistical modeling)
-- Proficient in data processing and analysis, including using Python libraries like Pandas, NumPy, and scikit-learn
-- Familiar with data visualization tools such as Matplotlib and Seaborn
-- Experience with financial modeling and statistical analysis for data-driven decision-making
+- Knowledge of AI and ML techniques (neural networks, k-means clustering, and statistical modeling)
+- Proficient in data processing and analysis with Python libraries like Pandas, NumPy, and scikit-learn
+- Familiar with data visualization tools (Matplotlib and Seaborn)
+- Experience with financial modeling and statistical analysis
 
