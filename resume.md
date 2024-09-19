@@ -44,5 +44,5 @@ creation of PowerPoint presentations)
 - Knowledge of AI and ML techniques (including neural networks, k-means clustering, and statistical modeling)
 - Proficient in data processing and analysis, including using Python libraries like Pandas, NumPy, and scikit-learn
 - Familiar with data visualization tools such as Matplotlib and Seaborn
-- Experienced with financial modeling and statistical analysis for data-driven decision-making
+- Experience with financial modeling and statistical analysis for data-driven decision-making
 
