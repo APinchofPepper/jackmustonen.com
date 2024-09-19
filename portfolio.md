@@ -12,9 +12,9 @@ Here's a collection of some of my favorite projects:
 
 **Link:** catnamegenius.com
 
-## Project 2
-**Description:** A brief description of what the project is, the technologies used, and its purpose.
+## Intelligence Report Generator
+**Description:** This project automates the daily generation of intelligence reports by scraping and summarizing news articles from sources like Yahoo News. Using Python, machine learning models, and scheduling tools, it generates concise summaries of relevant news articles, making it easier to stay informed.
 
-**Link:** [View Project](#)
+**Link:** [https://github.com/APinchofPepper/intelligenceReportGenerator](#)
 
 [More Projects](#) - (Link to more detailed project descriptions if needed)
