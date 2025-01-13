@@ -25,7 +25,7 @@ title: Home
                         <span class="tag">Deep Learning</span>
                     </div>
                     <p>An AI-powered application that generates personalized cat names using advanced image recognition technology.</p>
-                    <a href="https://github.com/APinchofPepper/cat-name-generator" class="btn btn-gradient btn-small">View Project</a>
+                    <button onclick="window.location.href='https://github.com/APinchofPepper/cat-name-generator'" class="btn btn-gradient btn-small">View Project</button>
                 </div>
             </div>
             
@@ -38,7 +38,7 @@ title: Home
                         <span class="tag">NLP</span>
                     </div>
                     <p>Automated system for generating comprehensive intelligence reports from various news sources using advanced NLP techniques.</p>
-                    <a href="https://github.com/APinchofPepper/intelligenceReportGenerator" class="btn btn-gradient btn-small">View Project</a>
+                    <button onclick="window.location.href='https://github.com/APinchofPepper/intelligenceReportGenerator'" class="btn btn-gradient btn-small">View Project</button>
                 </div>
             </div>
         </div>
