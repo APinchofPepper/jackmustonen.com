@@ -1,41 +1,64 @@
-// Modern Portfolio Scripts
+// Modern Portfolio Scripts - Enhanced Version
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
+    // Initialize loading bar
+    const loadingBar = document.createElement('div');
+    loadingBar.className = 'loading-bar';
+    document.body.appendChild(loadingBar);
+
+    // Enhanced smooth scrolling with offset calculation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollBy({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
-    // Intersection Observer for fade-in animations
+    // Enhanced Intersection Observer for animations
     const observerOptions = {
         root: null,
         threshold: 0.1,
-        rootMargin: '0px'
+        rootMargin: '20px'
     };
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                // Add visible class with delay based on index
+                const delay = Array.from(entry.target.parentNode.children).indexOf(entry.target) * 0.1;
+                entry.target.style.animationDelay = `${delay}s`;
                 entry.target.classList.add('visible');
+                
+                // Add scale-in animation for cards
+                if (entry.target.classList.contains('project-card') || 
+                    entry.target.classList.contains('skill-card')) {
+                    entry.target.classList.add('animate-scale-in');
+                }
+                
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe all elements with animation classes
-    document.querySelectorAll('.animate-fade-up, .project-card, .skill-card').forEach(el => {
+    // Observe elements with animation classes
+    document.querySelectorAll('.animate-fade-up, .project-card, .skill-card, .timeline-item').forEach(el => {
         observer.observe(el);
     });
 
-    // Navigation highlight based on scroll position
+    // Enhanced navigation highlight with smooth transitions
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a');
-
-    window.addEventListener('scroll', () => {
+    
+    function updateNavigation() {
         const scrollPos = window.scrollY + 100;
 
         sections.forEach(section => {
@@ -46,36 +69,99 @@ document.addEventListener('DOMContentLoaded', function() {
                 navLinks.forEach(link => {
                     if (link.getAttribute('href') === `#${section.id}`) {
                         link.classList.add('active');
+                        // Add subtle scale effect
+                        link.style.transform = 'scale(1.05)';
                     } else {
                         link.classList.remove('active');
+                        link.style.transform = 'scale(1)';
                     }
                 });
             }
         });
-    });
+    }
 
-    // Dynamic navbar background on scroll
+    window.addEventListener('scroll', _.throttle(updateNavigation, 100));
+
+    // Enhanced navbar scroll behavior
     const navbar = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', _.throttle(() => {
+        const currentScroll = window.scrollY;
+        
+        // Add scrolled class for background change
+        if (currentScroll > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+        
+        // Hide/show navbar based on scroll direction
+        if (currentScroll > lastScroll && currentScroll > 500) {
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            navbar.style.transform = 'translateY(0)';
+        }
+        
+        lastScroll = currentScroll;
+    }, 100));
 
-    // Project card hover effects
+    // Enhanced project card interactions
     document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.classList.add('hover');
+            // Add parallax effect to card content
+            const content = this.querySelector('.project-content');
+            if (content) {
+                content.style.transform = 'translateY(-5px)';
+            }
         });
+
         card.addEventListener('mouseleave', function() {
             this.classList.remove('hover');
+            const content = this.querySelector('.project-content');
+            if (content) {
+                content.style.transform = 'translateY(0)';
+            }
+        });
+
+        // Add tilt effect
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const tiltX = (y - centerY) / 20;
+            const tiltY = (centerX - x) / 20;
+            
+            this.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
         });
     });
 
-    // Skills animation
+    // Enhanced skill card animations
     document.querySelectorAll('.skill-card').forEach((card, index) => {
+        // Staggered animation delay
         card.style.animationDelay = `${index * 0.2}s`;
+        
+        // Add hover interaction
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Smooth reveal for timeline items
+    document.querySelectorAll('.timeline-item').forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.3}s`;
     });
 });
