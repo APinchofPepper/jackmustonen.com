@@ -26,7 +26,7 @@ title: Home
                         <span class="tag">Deep Learning</span>
                     </div>
                     <p>An AI-powered application that generates personalized cat names using advanced image recognition technology.</p>
-                    <a href="https://github.com/APinchofPepper/cat-name-generator" class="btn btn-gradient-sm">View Project</a>
+                    <a href="https://github.com/APinchofPepper/cat-name-generator" class="btn btn-gradient btn-small">View Project</a>
                 </div>
             </div>
             
