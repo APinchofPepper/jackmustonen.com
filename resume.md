@@ -8,7 +8,7 @@ permalink: /resume/
     <div class="container">
         <h1 class="animate-fade-up">Resume</h1>
         <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML and Data Science</p>
-        <a href="#" class="btn btn-outline animate-fade-up delay-2">Download PDF</a>
+        <a href="#" class="btn btn-gradient animate-fade-up delay-2">Download PDF</a>
     </div>
 </section>
 
@@ -16,13 +16,17 @@ permalink: /resume/
     <div class="container">
         <!-- Education Section -->
         <div class="resume-section animate-fade-up">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item animate-scale-in">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Oregon State University</h3>
-                        <p class="timeline-date">September 2023 - Present</p>
+                        <div class="content-header">
+                            <h3>Oregon State University</h3>
+                            <p class="timeline-date">September 2023 - Present</p>
+                        </div>
                         <p class="degree">Bachelor of Science, Computer Science</p>
                         <ul class="achievements">
                             <li>Focus on Machine Learning and Artificial Intelligence</li>
@@ -31,11 +35,13 @@ permalink: /resume/
                     </div>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item animate-scale-in delay-1">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Pepperdine University</h3>
-                        <p class="timeline-date">August 2021 - May 2023</p>
+                        <div class="content-header">
+                            <h3>Pepperdine University</h3>
+                            <p class="timeline-date">August 2021 - May 2023</p>
+                        </div>
                         <p class="degree">Bachelor of Science, Computer Science</p>
                     </div>
                 </div>
@@ -44,14 +50,18 @@ permalink: /resume/
 
         <!-- Experience Section -->
         <div class="resume-section animate-fade-up delay-1">
-            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            <div class="section-header">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item animate-scale-in">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Process Engineering Intern</h3>
-                        <p class="company">Jacobs Engineering, Portland, OR</p>
-                        <p class="timeline-date">May 2022 - September 2022</p>
+                        <div class="content-header">
+                            <h3>Process Engineering Intern</h3>
+                            <p class="company">Jacobs Engineering, Portland, OR</p>
+                            <p class="timeline-date">May 2022 - September 2022</p>
+                        </div>
                         <ul class="achievements">
                             <li>Supported construction services for semiconductor fabrication facilities, gaining hands-on experience with industry-standard tools and processes</li>
                             <li>Utilized advanced software platforms including Bluebeam, Navisworks, and Revit for technical documentation and project management</li>
@@ -61,12 +71,14 @@ permalink: /resume/
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item animate-scale-in delay-1">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Founder/Owner</h3>
-                        <p class="company">Cookie Town Cookies, Portland, OR</p>
-                        <p class="timeline-date">September 2018 - August 2022</p>
+                        <div class="content-header">
+                            <h3>Founder/Owner</h3>
+                            <p class="company">Cookie Town Cookies, Portland, OR</p>
+                            <p class="timeline-date">September 2018 - August 2022</p>
+                        </div>
                         <ul class="achievements">
                             <li>Founded and grew a successful cookie business with presence in eight New Seasons Market locations</li>
                             <li>Developed and managed e-commerce website, implementing digital solutions for order management</li>
@@ -80,10 +92,14 @@ permalink: /resume/
 
         <!-- Skills Section -->
         <div class="resume-section animate-fade-up delay-2">
-            <h2><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="section-header">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+            </div>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                <div class="skill-category animate-scale-in">
+                    <div class="category-header">
+                        <h3>Programming Languages</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="tag">Python</span>
                         <span class="tag">C++</span>
@@ -91,8 +107,10 @@ permalink: /resume/
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>AI & Machine Learning</h3>
+                <div class="skill-category animate-scale-in delay-1">
+                    <div class="category-header">
+                        <h3>AI & Machine Learning</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="tag">Neural Networks</span>
                         <span class="tag">Statistical Modeling</span>
@@ -100,8 +118,10 @@ permalink: /resume/
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Data Science</h3>
+                <div class="skill-category animate-scale-in delay-2">
+                    <div class="category-header">
+                        <h3>Data Science</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="tag">Pandas</span>
                         <span class="tag">NumPy</span>
@@ -111,8 +131,10 @@ permalink: /resume/
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
+                <div class="skill-category animate-scale-in delay-3">
+                    <div class="category-header">
+                        <h3>Tools & Technologies</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="tag">Git</span>
                         <span class="tag">Bluebeam</span>
