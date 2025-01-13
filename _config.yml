@@ -1,14 +1,67 @@
-title: Jack Mustonen's Portfolio
-description: Personal Portfolio Website
-theme: minima
-baseurl: "" 
+# Site Settings
+title: Jack Mustonen - Software Developer Portfolio
+description: >-
+  Software Developer specializing in AI, Machine Learning, and Data Science. 
+  View my projects, experience, and get in touch for opportunities.
+baseurl: ""
 url: "https://jackmustonen.com"
-author: Jack Mustonen
 
-# Custom CSS
-sass:
-  style: compressed
+# Author Information
+author:
+  name: Jack Mustonen
+  email: jack@cookietowncookies.com
 
-# Include custom CSS
-include:
-  - assets/css/styles.css
+# Build Settings
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Custom Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Exclude Files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+
+# Social Media
+social:
+  github: APinchofPepper
+  linkedin: jack-mustonen-2072b32bb
+
+# Analytics (you can add your Google Analytics ID here)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+
+# SEO
+twitter:
+  username: 
+  card: summary
+logo: /assets/images/logo.png
+social:
+  name: Jack Mustonen
+  links:
+    - https://github.com/APinchofPepper
+    - https://linkedin.com/in/jack-mustonen-2072b32bb/
