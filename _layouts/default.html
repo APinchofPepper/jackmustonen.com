@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Jack Mustonen - Software Developer Portfolio">
+    <title>{{ page.title }} | Jack Mustonen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    {% include navigation.html %}
-    
-    <div class="container">
+    <nav>
+        <div class="nav-container">
+            <a href="{{ site.baseurl }}/" class="logo">JM</a>
+            <div class="nav-links">
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/about/">About</a>
+                <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+                <a href="{{ site.baseurl }}/resume/">Resume</a>
+                <a href="{{ site.baseurl }}/contact/">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
         {{ content }}
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Jack Mustonen. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="https://github.com/apinchofpepper" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/jack-mustonen-2072b32bb/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jack Mustonen</h3>
+                <p>Software Developer | Problem Solver | Innovator</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/apinchofpepper" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jack-mustonen-2072b32bb/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; {{ site.time | date: '%Y' }} Jack Mustonen. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Include the JavaScript file for scroll animations -->
     <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
 </body>
 </html>
