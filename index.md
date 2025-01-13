@@ -12,7 +12,6 @@ title: Home
         </div>
     </div>
 </section>
-
 <section class="featured-section">
     <div class="container">
         <h2 class="section-title animate-fade-up">Featured Projects</h2>
@@ -39,7 +38,7 @@ title: Home
                         <span class="tag">NLP</span>
                     </div>
                     <p>Automated system for generating comprehensive intelligence reports from various news sources using advanced NLP techniques.</p>
-                    <a href="https://github.com/APinchofPepper/intelligenceReportGenerator" class="btn btn-gradient-sm">View Project</a>
+                    <a href="https://github.com/APinchofPepper/intelligenceReportGenerator" class="btn btn-gradient btn-small">View Project</a>
                 </div>
             </div>
         </div>
