@@ -290,23 +290,39 @@ footer {
 }
 
 /* Project Card Button Styles */
-.project-card .btn {
+.project-card .btn,
+.project-card .btn:visited,
+.project-card .btn:link {
     margin-top: 1.5rem;
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    color: white;
+    color: white !important; /* Forces color to stay white */
     font-weight: 600;
     padding: 0.8rem 1.8rem;
     border-radius: 8px;
     transition: all 0.3s ease;
     display: inline-block;
+    text-decoration: none;
+    border: none;
 }
 
-.project-card .btn:hover {
+.project-card .btn:hover,
+.project-card .btn:active {
     transform: translateY(-3px);
     box-shadow: var(--hover-shadow);
+    color: white !important;
+    background: linear-gradient(135deg, 
+        var(--gradient-start), 
+        var(--gradient-end)
+    );
+    opacity: 0.95; /* Subtle dimming on hover instead of color change */
 }
 
 .project-card .btn-small {
     font-size: 0.9rem;
     padding: 0.6rem 1.4rem;
+}
+
+/* Prevent any default link styling */
+.project-card a.btn {
+    text-decoration: none;
 }
