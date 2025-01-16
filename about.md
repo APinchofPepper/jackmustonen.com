@@ -59,25 +59,42 @@ permalink: /about/
         <div class="skills-section animate-fade-up delay-2">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
+                <!-- Programming Languages -->
                 <div class="skill-category">
                     <h3>Programming Languages</h3>
                     <p>Python, JavaScript (React, Node.js), TypeScript, HTML, CSS, C++, C, Vue.js</p>
                 </div>
+                <!-- Frameworks and Libraries -->
                 <div class="skill-category">
                     <h3>Frameworks and Libraries</h3>
                     <p>React, Next.js, Vue.js, Flask, FastAPI, Tailwind CSS, TensorFlow, Keras</p>
                 </div>
+                <!-- Data Science and Machine Learning -->
                 <div class="skill-category">
                     <h3>Data Science and Machine Learning</h3>
-                    <p>Hugging Face Transformers, Scikit-learn, PyTorch, NumPy, Pandas, Matplotlib</p>
+                    <p>Hugging Face Transformers, Scikit-learn, PyTorch, NumPy, Pandas, Matplotlib, Seaborn</p>
+                    <p>Techniques: Neural Networks, Statistical Modeling, K-means Clustering</p>
                 </div>
+                <!-- Cybersecurity -->
                 <div class="skill-category">
                     <h3>Cybersecurity</h3>
-                    <p>PyCryptodome, CryptoJS, AES, RSA, PBKDF2, Secure Session Management</p>
+                    <p>Experience with PyCryptodome, CryptoJS, and Secure Session Management</p>
                 </div>
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3>Data Management</h3>
+                    <p>SQL, NoSQL (MongoDB, DynamoDB), SQLite</p>
+                    <p>Experience with Synthetic Data Generation, Metadata Management, Blockchain Implementation</p>
+                </div>
+                <!-- DevOps and Tools -->
                 <div class="skill-category">
                     <h3>DevOps and Tools</h3>
                     <p>Git, Docker, Uvicorn, pytest, BeautifulSoup, Recharts</p>
+                </div>
+                <!-- Other Skills -->
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <p>Data Acquisition Systems, Financial Modeling, Statistical Analysis</p>
                 </div>
             </div>
         </div>
@@ -85,6 +102,7 @@ permalink: /about/
         <div class="interests-section animate-fade-up delay-3">
             <h2>What Drives Me</h2>
             <div class="interests-grid">
+                <!-- Artificial Intelligence -->
                 <div class="interest-card animate-scale-in">
                     <div class="interest-icon">
                         <i class="fas fa-robot"></i>
@@ -95,9 +113,10 @@ permalink: /about/
                     </div>
                 </div>
                 
+                <!-- Data Science -->
                 <div class="interest-card animate-scale-in delay-1">
                     <div class="interest-icon">
-                        <i class="fas fa-chart-network"></i>
+                        <i class="fas fa-chart-bar"></i>
                     </div>
                     <div class="interest-content">
                         <h3>Data Science</h3>
@@ -105,6 +124,7 @@ permalink: /about/
                     </div>
                 </div>
                 
+                <!-- Software Development -->
                 <div class="interest-card animate-scale-in delay-2">
                     <div class="interest-icon">
                         <i class="fas fa-code-branch"></i>
@@ -116,6 +136,7 @@ permalink: /about/
                 </div>
             </div>
         </div>
+
 
         <div class="projects-section animate-fade-up delay-4">
             <h2>Highlighted Projects</h2>
