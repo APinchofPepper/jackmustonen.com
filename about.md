@@ -14,9 +14,9 @@ permalink: /about/
 <section class="about-content">
     <div class="container">
         <div class="about-intro animate-fade-up">
-            <p class="lead">As a Computer Science student at Oregon State University with a focus on Machine Learning and Artificial Intelligence, I combine a strong technical foundation with a creative approach to problem-solving. My goal is to design innovative systems that make a tangible impact.</p>
+            <p class="lead">As a Computer Science student at Oregon State University with a focus on machine learning and artificial intelligence, I combine a strong technical foundation with a creative approach to problem-solving. My goal is to design innovative systems that make a tangible impact.</p>
             
-            <p>With experience spanning full-stack development, distributed systems, data science, and cybersecurity, I’ve worked on projects that solve real-world challenges. From developing intelligent systems like a Distributed File System to exploring blockchain solutions for supply chain transparency, my portfolio reflects both breadth and depth in technology.</p>
+            <p>With experience spanning full-stack development, distributed systems, data science, and cybersecurity, I’ve worked on projects that solve real-world probems. From developing intelligent systems including my Distributed File System to exploring blockchain solutions for supply chain transparency, my portfolio reflects both breadth and depth in technology.</p>
         </div>
 
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
@@ -52,7 +52,7 @@ permalink: /about/
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Innovative Projects</h3>
-                        <p>Developed standout projects like a Distributed File System, Blockchain Supply Chain Tracker, and Intelligence Report Generator.</p>
+                        <p>Developed standout projects such as a Distributed File System, Blockchain Supply Chain Tracker, and Intelligence Report Generator.</p>
                     </div>
                 </div>
             </div>
