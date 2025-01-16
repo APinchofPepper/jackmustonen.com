@@ -19,6 +19,8 @@ permalink: /about/
             <p>With experience spanning full-stack development, distributed systems, data science, and cybersecurity, I’ve worked on projects that solve real-world challenges. From developing intelligent systems like a Distributed File System to exploring blockchain solutions for supply chain transparency, my portfolio reflects both breadth and depth in technology.</p>
         </div>
 
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+
         <div class="journey-section animate-fade-up delay-1">
             <h2>My Journey</h2>
             <div class="timeline">
