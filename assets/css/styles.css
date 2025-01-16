@@ -57,20 +57,28 @@ nav {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     padding: 1.5rem 0;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .nav-container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -90,24 +98,25 @@ nav {
 }
 
 .nav-links {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-links a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  color: white;
-  transform: translateY(-2px);
+.nav-links a:hover,
+.nav-links a.active {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Modern Hero Section */
@@ -205,8 +214,6 @@ nav {
   margin-top: 3rem;
 }
 
-/* [Previous Project Card Styles Stay the Same] */
-
 /* Enhanced Footer */
 footer {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -256,22 +263,17 @@ footer {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* [Keep all your existing animations, timeline, project cards, and responsive styles] */
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    /* Navigation Styles */
     nav {
-        padding: 1rem 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
+        padding: 0.5rem 0;
+        background: rgba(255, 255, 255, 0.98);
     }
 
     .nav-container {
         flex-direction: column;
         gap: 0.5rem;
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
     }
     
     .nav-links {
@@ -283,63 +285,6 @@ footer {
     .nav-links a {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
-    }
-
-    /* Main Content Adjustment */
-    main {
-        margin-top: 80px;
-    }
-
-    /* Hero Section */
-    .hero {
-        padding: 4rem 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .hero p {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .hero-content {
-        padding: 0 1rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
-
-    /* Button Styles */
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-    }
-
-    /* Container Adjustments */
-    .container {
-        width: 95%;
-        padding: 1.5rem;
-        margin: 1rem auto;
-    }
-
-    /* Footer Adjustments */
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 0 1rem;
-    }
-
-    .footer-section {
-        text-align: center;
     }
 }
 
