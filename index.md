@@ -68,6 +68,8 @@ title: Home
     <div class="container">
         <h2 class="section-title animate-fade-up">Technical Expertise</h2>
         <div class="skills-grid">
+
+            <!-- Programming Languages -->
             <div class="skill-card animate-scale-in">
                 <div class="skill-icon">
                     <i class="fas fa-code"></i>
@@ -77,66 +79,79 @@ title: Home
                     <p>Python, JavaScript (Vanilla, React, Node.js), TypeScript, HTML, CSS, C++, C</p>
                 </div>
             </div>
-            
+
+            <!-- AI & Machine Learning -->
             <div class="skill-card animate-scale-in delay-1">
                 <div class="skill-icon">
                     <i class="fas fa-brain"></i>
                 </div>
                 <div class="skill-content">
                     <h3>AI & Machine Learning</h3>
-                    <p>TensorFlow, Keras, Hugging Face Transformers, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn</p>
+                    <p>TensorFlow, Keras, Hugging Face Transformers, Scikit-learn, NumPy, Pandas</p>
+                    <p>Techniques: Neural Networks, Statistical Modeling, K-means Clustering</p>
                 </div>
             </div>
-            
+
+            <!-- Data Management -->
             <div class="skill-card animate-scale-in delay-2">
                 <div class="skill-icon">
                     <i class="fas fa-database"></i>
                 </div>
                 <div class="skill-content">
                     <h3>Data Management</h3>
-                    <p>SQLite, Synthetic Data Generation, Metadata Management, Blockchain Implementation</p>
+                    <p>SQL, NoSQL (MongoDB, DynamoDB), SQLite</p>
+                    <p>Experience with Synthetic Data Generation, Metadata Management, and Blockchain Implementation</p>
                 </div>
             </div>
 
+            <!-- Web Development -->
             <div class="skill-card animate-scale-in delay-3">
                 <div class="skill-icon">
                     <i class="fas fa-globe"></i>
                 </div>
                 <div class="skill-content">
                     <h3>Web Development</h3>
-                    <p>React (including Next.js), Vue.js, Tailwind CSS, shadcn/ui, Flask, FastAPI, RESTful API Development</p>
+                    <p>React (Next.js), Vue.js, Tailwind CSS, Flask, FastAPI</p>
+                    <p>Proficient in RESTful API Development and Axios</p>
                 </div>
             </div>
 
+            <!-- DevOps & Tools -->
             <div class="skill-card animate-scale-in delay-4">
-                <div class="skill-icon">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <div class="skill-content">
-                    <h3>Cybersecurity & Cryptography</h3>
-                    <p>PyCryptodome, CryptoJS, Encryption techniques (AES, RSA, Vigenère, PBKDF2, Fernet), Secure session management</p>
-                </div>
-            </div>
-
-            <div class="skill-card animate-scale-in delay-5">
                 <div class="skill-icon">
                     <i class="fas fa-tools"></i>
                 </div>
                 <div class="skill-content">
                     <h3>DevOps & Tools</h3>
-                    <p>Git/GitHub, Node.js/npm, Docker, Uvicorn, pytest (Testing Framework)</p>
+                    <p>Git/GitHub, Docker, Node.js/npm, Uvicorn, pytest</p>
+                    <p>Experience with Web Scraping (BeautifulSoup, Requests) and Scheduling Tools (Cron, macOS Automator)</p>
                 </div>
             </div>
 
+            <!-- Data Science & Visualization -->
+            <div class="skill-card animate-scale-in delay-5">
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="skill-content">
+                    <h3>Data Science & Visualization</h3>
+                    <p>Proficient in Data Processing and Analysis with Pandas, NumPy, and Scikit-learn</p>
+                    <p>Data Visualization with Matplotlib, Seaborn, and Recharts</p>
+                </div>
+            </div>
+
+            <!-- Other Technical Skills -->
             <div class="skill-card animate-scale-in delay-6">
                 <div class="skill-icon">
-                    <i class="fas fa-chart-bar"></i>
+                    <i class="fas fa-cogs"></i>
                 </div>
                 <div class="skill-content">
                     <h3>Other Technical Skills</h3>
-                    <p>Web Scraping (BeautifulSoup, Requests), Scheduling Tools (Cron, macOS Automator), Data Visualization (Recharts), File Organization Utilities</p>
+                    <p>Data Acquisition Systems, Financial Modeling, Statistical Analysis</p>
+                    <p>File Organization Utilities and Advanced Debugging Techniques</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
