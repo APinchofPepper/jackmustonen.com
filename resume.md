@@ -7,7 +7,7 @@ permalink: /resume/
 <section class="resume-header">
     <div class="container">
         <h1 class="animate-fade-up">Resume</h1>
-        <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML, Full-Stack Development, and Distributed Systems</p>
+        <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML, Full-Stack Development, and Data-Driven Systems</p>
         <a href="#" class="btn btn-gradient animate-fade-up delay-2">Download PDF</a>
     </div>
 </section>
@@ -117,15 +117,23 @@ permalink: /resume/
                 </div>
                 <div class="skill-category animate-scale-in delay-2">
                     <h3>Data Science & Machine Learning</h3>
-                    <p>Scikit-learn, Pandas, NumPy, Hugging Face Transformers, Matplotlib</p>
+                    <p>Scikit-learn, Pandas, NumPy, Hugging Face Transformers, Matplotlib, Seaborn</p>
                 </div>
                 <div class="skill-category animate-scale-in delay-3">
+                    <h3>Databases</h3>
+                    <p>SQL, NoSQL (MongoDB, DynamoDB), SQLite</p>
+                </div>
+                <div class="skill-category animate-scale-in delay-4">
                     <h3>DevOps & Tools</h3>
                     <p>Git, Docker, Uvicorn, pytest, Web Scraping (BeautifulSoup, Requests)</p>
                 </div>
-                <div class="skill-category animate-scale-in delay-4">
+                <div class="skill-category animate-scale-in delay-5">
                     <h3>Web Development</h3>
-                    <p>RESTful APIs, React, Next.js, FastAPI, Axios, zxcvbn</p>
+                    <p>RESTful APIs, React, Next.js, FastAPI, Axios</p>
+                </div>
+                <div class="skill-category animate-scale-in delay-6">
+                    <h3>Other Skills</h3>
+                    <p>Data Acquisition Systems, Financial Modeling, Statistical Analysis</p>
                 </div>
             </div>
         </div>
