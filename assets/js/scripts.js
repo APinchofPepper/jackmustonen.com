@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Enhanced navigation highlight with smooth transitions
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a');
+    const navbar = document.querySelector('nav');
     
     function updateNavigation() {
         const scrollPos = window.scrollY + 100;
@@ -78,26 +79,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
+
+        // Show navbar only when at the top
+        if (window.scrollY < 50) {
+            navbar.classList.remove('hidden');
+        } else {
+            navbar.classList.add('hidden');
+        }
     }
 
+    // Combine scroll listeners with throttle
     window.addEventListener('scroll', _.throttle(updateNavigation, 100));
-
-    // Enhanced navbar scroll behavior
-    const navbar = document.querySelector('nav');
-    let lastScroll = 0;
-    
-    document.addEventListener('DOMContentLoaded', function() {
-    // Enhanced navbar scroll behavior
-    const navbar = document.querySelector('nav');
-    
-    window.addEventListener('scroll', _.throttle(() => {
-        // Only add scrolled class for background change
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    }, 100));
 
     // Enhanced project card interactions
     document.querySelectorAll('.project-card').forEach(card => {
