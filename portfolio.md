@@ -138,7 +138,7 @@ permalink: /portfolio/
                     <div class="header-content">
                         <h2>Password Strength Manager</h2>
                         <div class="project-links">
-                            <a href="https://github.com/APinchofPepper/password-strength-manager" target="_blank" class="github-link">
+                            <a href="https://github.com/APinchofPepper/PasswordManager" target="_blank" class="github-link">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
