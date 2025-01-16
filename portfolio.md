@@ -13,6 +13,7 @@ permalink: /portfolio/
 
 <section class="portfolio-grid">
     <div class="container">
+
         <!-- Cat Name Genius -->
         <div class="project-card animate-scale-in">
             <div class="project-content">
@@ -90,8 +91,127 @@ permalink: /portfolio/
                 </div>
             </div>
         </div>
+
+        <!-- Cryptography Tool -->
+        <div class="project-card animate-scale-in delay-3">
+            <div class="project-content">
+                <div class="project-header">
+                    <div class="header-content">
+                        <h2>Cryptography Tool</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/APinchofPepper/CryptographyTool" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Encryption</span>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <div class="section-content animate-fade-up delay-4">
+                        <h3>Overview</h3>
+                        <p>A web application for exploring various cryptographic algorithms, including AES, RSA, and Vigenère Cipher, with a secure and interactive interface.</p>
+                    </div>
+                    
+                    <div class="section-content animate-fade-up delay-5">
+                        <h3>Technical Highlights</h3>
+                        <ul>
+                            <li>Implemented AES and RSA encryption for secure data handling</li>
+                            <li>Developed a React-based interface for user interaction</li>
+                            <li>Used FastAPI for backend services and PyCryptodome for encryption logic</li>
+                            <li>Built test coverage with Pytest for backend functionality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Strength Manager -->
+        <div class="project-card animate-scale-in delay-4">
+            <div class="project-content">
+                <div class="project-header">
+                    <div class="header-content">
+                        <h2>Password Strength Manager</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/APinchofPepper/password-strength-manager" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Encryption</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <div class="section-content animate-fade-up delay-5">
+                        <h3>Overview</h3>
+                        <p>A comprehensive password manager application with real-time strength analysis, strong password generation, and encrypted local storage.</p>
+                    </div>
+                    
+                    <div class="section-content animate-fade-up delay-6">
+                        <h3>Technical Highlights</h3>
+                        <ul>
+                            <li>Real-time password strength analysis using zxcvbn</li>
+                            <li>Implemented strong password generation algorithms</li>
+                            <li>Encrypted local password storage using CryptoJS</li>
+                            <li>Built with Vue 3 and TypeScript for performance and scalability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Algorithm Visualizer -->
+        <div class="project-card animate-scale-in delay-5">
+            <div class="project-content">
+                <div class="project-header">
+                    <div class="header-content">
+                        <h2>Algorithm Visualizer</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/APinchofPepper/AlgorithmVisualizer" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <div class="section-content animate-fade-up delay-6">
+                        <h3>Overview</h3>
+                        <p>An interactive tool for visualizing sorting algorithms, comparing their performance, and learning through practice.</p>
+                    </div>
+                    
+                    <div class="section-content animate-fade-up delay-7">
+                        <h3>Technical Highlights</h3>
+                        <ul>
+                            <li>Visualized sorting algorithms like Quick Sort, Merge Sort, and Bubble Sort</li>
+                            <li>Interactive practice mode for hands-on learning</li>
+                            <li>Responsive UI with customization options</li>
+                            <li>Built with HTML, CSS, and JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
+
 
 <section class="contact-cta">
     <div class="container">
