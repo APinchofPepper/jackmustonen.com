@@ -34,6 +34,10 @@ body {
   padding: 0;
 }
 
+main {
+    margin-top: 80px; /* Height of the nav bar */
+}
+
 /* Modern Container Styles */
 .container {
   max-width: var(--container-width);
@@ -127,6 +131,7 @@ nav.hidden {
   color: white;
   overflow: hidden;
   text-align: center;
+  margin-top: -80px;
 }
 
 .hero-content {
@@ -285,6 +290,26 @@ footer {
     .nav-links a {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
+    }
+
+    /* Hero Section adjustments */
+    .hero {
+        padding: 6rem 0 4rem;
+        margin-top: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
     }
 }
 
