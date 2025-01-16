@@ -7,7 +7,7 @@ permalink: /resume/
 <section class="resume-header">
     <div class="container">
         <h1 class="animate-fade-up">Resume</h1>
-        <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML, Data Science, and Distributed Systems</p>
+        <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML, Full-Stack Development, and Distributed Systems</p>
         <a href="#" class="btn btn-gradient animate-fade-up delay-2">Download PDF</a>
     </div>
 </section>
@@ -63,10 +63,9 @@ permalink: /resume/
                             <p class="timeline-date">May 2022 - September 2022</p>
                         </div>
                         <ul class="achievements">
-                            <li>Supported construction services for semiconductor fabrication facilities, gaining hands-on experience with industry-standard tools and processes</li>
-                            <li>Utilized advanced software platforms including Bluebeam, Navisworks, and Revit for technical documentation and project management</li>
-                            <li>Collaborated on RFI responses and technical presentations, developing strong communication and teamwork skills</li>
-                            <li>Contributed to water treatment service design projects, applying engineering principles to real-world solutions</li>
+                            <li>Collaborated on technical documentation and process optimization for semiconductor fabrication facilities</li>
+                            <li>Utilized tools like Bluebeam, Navisworks, and Revit to manage complex engineering projects</li>
+                            <li>Developed RFI responses and presentations, enhancing technical communication skills</li>
                         </ul>
                     </div>
                 </div>
@@ -80,10 +79,9 @@ permalink: /resume/
                             <p class="timeline-date">September 2018 - August 2022</p>
                         </div>
                         <ul class="achievements">
-                            <li>Founded and grew a successful cookie business with a presence in eight New Seasons Market locations</li>
-                            <li>Developed and managed an e-commerce website, implementing digital solutions for order management</li>
-                            <li>Scaled production to over 500 cookies daily while maintaining quality and efficiency</li>
-                            <li>Generated annual revenue exceeding $156,000 through strategic business development</li>
+                            <li>Developed and managed an e-commerce platform to streamline order processing and inventory tracking</li>
+                            <li>Scaled operations to meet demand while maintaining high-quality standards and customer satisfaction</li>
+                            <li>Implemented data-driven business strategies, generating over $156,000 in annual revenue</li>
                         </ul>
                     </div>
                 </div>
@@ -96,10 +94,10 @@ permalink: /resume/
                 <h2><i class="fas fa-project-diagram"></i> Selected Projects</h2>
             </div>
             <ul class="project-list">
-                <li><strong>Distributed File System:</strong> Scalable, secure system with features like file replication, multi-tiered storage, and intelligent data deduplication.</li>
-                <li><strong>Blockchain Supply Chain Tracker:</strong> End-to-end product tracking with blockchain, real-time analytics, and environmental metrics monitoring.</li>
-                <li><strong>Cryptography Tool:</strong> Web-based application for exploring encryption techniques such as AES and RSA, with a React-based interface.</li>
-                <li><strong>Algorithm Visualizer:</strong> Interactive tool for visualizing and comparing sorting algorithms with real-time feedback and insights.</li>
+                <li><strong>Distributed File System:</strong> Scalable, fault-tolerant system with automated file replication, tiered storage, and efficient data deduplication using Flask, React, and Python.</li>
+                <li><strong>Blockchain Supply Chain Tracker:</strong> Blockchain-based platform providing real-time tracking and analytics for product journeys, leveraging FastAPI, React, and Recharts.</li>
+                <li><strong>Algorithm Visualizer:</strong> Interactive web tool for visualizing and comparing sorting algorithms, built with HTML, CSS, and JavaScript.</li>
+                <li><strong>Intelligence Report Generator:</strong> Automated NLP pipeline for summarizing news articles, built using Python, Hugging Face Transformers, and Pandas.</li>
             </ul>
         </div>
 
@@ -111,23 +109,23 @@ permalink: /resume/
             <div class="skills-grid">
                 <div class="skill-category animate-scale-in">
                     <h3>Programming Languages</h3>
-                    <p>Python, JavaScript (React, Node.js), TypeScript, HTML, CSS, C++, C, Vue.js</p>
+                    <p>Python, JavaScript (React, Node.js), TypeScript, HTML, CSS, C++, C</p>
                 </div>
                 <div class="skill-category animate-scale-in delay-1">
                     <h3>Frameworks & Libraries</h3>
-                    <p>React (Next.js), Vue.js, Flask, FastAPI, Tailwind CSS, TensorFlow, Keras</p>
+                    <p>React (Next.js), Flask, FastAPI, Tailwind CSS, TensorFlow, Keras</p>
                 </div>
                 <div class="skill-category animate-scale-in delay-2">
                     <h3>Data Science & Machine Learning</h3>
-                    <p>Hugging Face Transformers, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn</p>
+                    <p>Scikit-learn, Pandas, NumPy, Hugging Face Transformers, Matplotlib</p>
                 </div>
                 <div class="skill-category animate-scale-in delay-3">
-                    <h3>Cybersecurity</h3>
-                    <p>PyCryptodome, CryptoJS, AES, RSA, PBKDF2, Secure Session Management</p>
+                    <h3>DevOps & Tools</h3>
+                    <p>Git, Docker, Uvicorn, pytest, Web Scraping (BeautifulSoup, Requests)</p>
                 </div>
                 <div class="skill-category animate-scale-in delay-4">
-                    <h3>DevOps & Tools</h3>
-                    <p>Git, Docker, Uvicorn, pytest, Recharts</p>
+                    <h3>Web Development</h3>
+                    <p>RESTful APIs, React, Next.js, FastAPI, Axios, zxcvbn</p>
                 </div>
             </div>
         </div>
