@@ -65,9 +65,11 @@ permalink: /resume/
                             <p class="timeline-date">May 2022 - September 2022</p>
                         </div>
                         <ul class="achievements">
-                            <li>Collaborated on technical documentation and process optimization for semiconductor fabrication facilities</li>
-                            <li>Utilized tools like Bluebeam, Navisworks, and Revit to manage complex engineering projects</li>
-                            <li>Developed RFI responses and presentations, enhancing technical communication skills</li>
+                            <li>Supported services during construction for semiconductor fabrication facilities (Fab) in Arizona (Confidential Client)</li>
+                            <li>Conducted work within the following software platforms: Bluebeam, Navisworks, Procore, Pipeflo, Autodesk ProjectWise, Revit, excel, word, and PowerPoint</li>
+                            <li>Gained familiarity with semiconductor factory project sites and supporting systems</li>
+                            <li>Collaborated with technical staff on several different projects (development of RFI responses, creation of PowerPoint presentations)</li>
+                            <li>Assisted in the design and implementation of water treatment services for clients</li>
                         </ul>
                     </div>
                 </div>
@@ -81,9 +83,11 @@ permalink: /resume/
                             <p class="timeline-date">September 2018 - August 2022</p>
                         </div>
                         <ul class="achievements">
-                            <li>Developed and managed an e-commerce platform to streamline order processing and inventory tracking</li>
-                            <li>Scaled operations to meet demand while maintaining high-quality standards and customer satisfaction</li>
-                            <li>Implemented data-driven business strategies, generating over $156,000 in annual revenue</li>
+                            <li>Solicit online sales and sold product in eight New Seasons Market Grocery Stores in three cities</li>
+                            <li>Develop and manage the Cookie Town Cookies website</li>
+                            <li>Utilize excellent leadership and organizational skills to produce over 500 cookies per day</li>
+                            <li>Maintain timely communications with clients and business partners</li>
+                            <li>Demonstrate business development skills by expanding product sales into eight New Seasons Grocery Stores, resulting in gross annual revenue of over $156,000</li>
                         </ul>
                     </div>
                 </div>
