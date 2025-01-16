@@ -99,6 +99,8 @@ permalink: /about/
             </div>
         </div>
 
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+
         <div class="interests-section animate-fade-up delay-3">
             <h2>What Drives Me</h2>
             <div class="interests-grid">
