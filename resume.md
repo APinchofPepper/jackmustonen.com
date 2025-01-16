@@ -7,7 +7,7 @@ permalink: /resume/
 <section class="resume-header">
     <div class="container">
         <h1 class="animate-fade-up">Resume</h1>
-        <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML and Data Science</p>
+        <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML, Data Science, and Distributed Systems</p>
         <a href="#" class="btn btn-gradient animate-fade-up delay-2">Download PDF</a>
     </div>
 </section>
@@ -30,7 +30,7 @@ permalink: /resume/
                         <p class="degree">Bachelor of Science, Computer Science</p>
                         <ul class="achievements">
                             <li>Focus on Machine Learning and Artificial Intelligence</li>
-                            <li>Member of Computer Science Club</li>
+                            <li>Active Member of Computer Science Club</li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ permalink: /resume/
                         <ul class="achievements">
                             <li>Supported construction services for semiconductor fabrication facilities, gaining hands-on experience with industry-standard tools and processes</li>
                             <li>Utilized advanced software platforms including Bluebeam, Navisworks, and Revit for technical documentation and project management</li>
-                            <li>Collaborated on RFI responses and technical presentations, developing strong communication skills in a professional environment</li>
+                            <li>Collaborated on RFI responses and technical presentations, developing strong communication and teamwork skills</li>
                             <li>Contributed to water treatment service design projects, applying engineering principles to real-world solutions</li>
                         </ul>
                     </div>
@@ -80,8 +80,8 @@ permalink: /resume/
                             <p class="timeline-date">September 2018 - August 2022</p>
                         </div>
                         <ul class="achievements">
-                            <li>Founded and grew a successful cookie business with presence in eight New Seasons Market locations</li>
-                            <li>Developed and managed e-commerce website, implementing digital solutions for order management</li>
+                            <li>Founded and grew a successful cookie business with a presence in eight New Seasons Market locations</li>
+                            <li>Developed and managed an e-commerce website, implementing digital solutions for order management</li>
                             <li>Scaled production to over 500 cookies daily while maintaining quality and efficiency</li>
                             <li>Generated annual revenue exceeding $156,000 through strategic business development</li>
                         </ul>
@@ -90,57 +90,44 @@ permalink: /resume/
             </div>
         </div>
 
-        <!-- Skills Section -->
+        <!-- Projects Section -->
         <div class="resume-section animate-fade-up delay-2">
+            <div class="section-header">
+                <h2><i class="fas fa-project-diagram"></i> Selected Projects</h2>
+            </div>
+            <ul class="project-list">
+                <li><strong>Distributed File System:</strong> Scalable, secure system with features like file replication, multi-tiered storage, and intelligent data deduplication.</li>
+                <li><strong>Blockchain Supply Chain Tracker:</strong> End-to-end product tracking with blockchain, real-time analytics, and environmental metrics monitoring.</li>
+                <li><strong>Cryptography Tool:</strong> Web-based application for exploring encryption techniques such as AES and RSA, with a React-based interface.</li>
+                <li><strong>Algorithm Visualizer:</strong> Interactive tool for visualizing and comparing sorting algorithms with real-time feedback and insights.</li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="resume-section animate-fade-up delay-3">
             <div class="section-header">
                 <h2><i class="fas fa-code"></i> Technical Skills</h2>
             </div>
             <div class="skills-grid">
                 <div class="skill-category animate-scale-in">
-                    <div class="category-header">
-                        <h3>Programming Languages</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">SQL</span>
-                    </div>
+                    <h3>Programming Languages</h3>
+                    <p>Python, JavaScript (React, Node.js), TypeScript, HTML, CSS, C++, C, Vue.js</p>
                 </div>
-                
                 <div class="skill-category animate-scale-in delay-1">
-                    <div class="category-header">
-                        <h3>AI & Machine Learning</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="tag">Neural Networks</span>
-                        <span class="tag">Statistical Modeling</span>
-                        <span class="tag">K-means Clustering</span>
-                    </div>
+                    <h3>Frameworks & Libraries</h3>
+                    <p>React (Next.js), Vue.js, Flask, FastAPI, Tailwind CSS, TensorFlow, Keras</p>
                 </div>
-                
                 <div class="skill-category animate-scale-in delay-2">
-                    <div class="category-header">
-                        <h3>Data Science</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="tag">Pandas</span>
-                        <span class="tag">NumPy</span>
-                        <span class="tag">Scikit-learn</span>
-                        <span class="tag">Matplotlib</span>
-                        <span class="tag">Seaborn</span>
-                    </div>
+                    <h3>Data Science & Machine Learning</h3>
+                    <p>Hugging Face Transformers, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn</p>
                 </div>
-                
                 <div class="skill-category animate-scale-in delay-3">
-                    <div class="category-header">
-                        <h3>Tools & Technologies</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">Bluebeam</span>
-                        <span class="tag">Navisworks</span>
-                        <span class="tag">Revit</span>
-                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>PyCryptodome, CryptoJS, AES, RSA, PBKDF2, Secure Session Management</p>
+                </div>
+                <div class="skill-category animate-scale-in delay-4">
+                    <h3>DevOps & Tools</h3>
+                    <p>Git, Docker, Uvicorn, pytest, Recharts</p>
                 </div>
             </div>
         </div>
