@@ -3,6 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
+
 <section class="about-header">
     <div class="container">
         <h1 class="animate-fade-up">Who I Am</h1>
@@ -13,9 +14,9 @@ permalink: /about/
 <section class="about-content">
     <div class="container">
         <div class="about-intro animate-fade-up">
-            <p class="lead">As a fourth-year Computer Science student at Oregon State University, I combine technical expertise with a passion for innovative problem-solving that makes a difference.</p>
+            <p class="lead">As a Computer Science student at Oregon State University with a focus on Machine Learning and Artificial Intelligence, I combine a strong technical foundation with a creative approach to problem-solving. My goal is to design innovative systems that make a tangible impact.</p>
             
-            <p>With a strong foundation in Python, C++, and data science, I specialize in developing intelligent systems and analyzing complex datasets. My experience spans from process engineering at Jacobs Engineering to entrepreneurial success with Cookie Town Cookies, giving me a unique perspective on both technical development and business operations.</p>
+            <p>With experience spanning full-stack development, distributed systems, data science, and cybersecurity, I’ve worked on projects that solve real-world challenges. From developing intelligent systems like a Distributed File System to exploring blockchain solutions for supply chain transparency, my portfolio reflects both breadth and depth in technology.</p>
         </div>
 
         <div class="journey-section animate-fade-up delay-1">
@@ -24,38 +25,64 @@ permalink: /about/
                 <div class="timeline-item animate-scale-in">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Started Programming</h3>
-                        <p>Discovered my passion for coding and began learning Python</p>
+                        <h3>Early Passion for Programming</h3>
+                        <p>Started my coding journey with Python, building small projects and gradually exploring complex systems.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item animate-scale-in delay-1">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Founded Cookie Town Cookies</h3>
-                        <p>Launched successful business venture while developing entrepreneurial skills</p>
+                        <h3>Entrepreneurial Success</h3>
+                        <p>Founded Cookie Town Cookies, scaling production to eight locations while managing an e-commerce platform.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item animate-scale-in delay-2">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Jacobs Engineering Internship</h3>
-                        <p>Gained valuable industry experience in process engineering</p>
+                        <h3>Industry Experience</h3>
+                        <p>Interned at Jacobs Engineering, gaining hands-on experience with process engineering, technical documentation, and team collaboration.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item animate-scale-in delay-3">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Advanced AI Projects</h3>
-                        <p>Developed Cat Name Genius and Intelligence Report Generator</p>
+                        <h3>Innovative Projects</h3>
+                        <p>Developed standout projects like a Distributed File System, Blockchain Supply Chain Tracker, and Intelligence Report Generator.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="interests-section animate-fade-up delay-2">
+        <div class="skills-section animate-fade-up delay-2">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <p>Python, JavaScript (React, Node.js), TypeScript, HTML, CSS, C++, C, Vue.js</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks and Libraries</h3>
+                    <p>React, Next.js, Vue.js, Flask, FastAPI, Tailwind CSS, TensorFlow, Keras</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science and Machine Learning</h3>
+                    <p>Hugging Face Transformers, Scikit-learn, PyTorch, NumPy, Pandas, Matplotlib</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cybersecurity</h3>
+                    <p>PyCryptodome, CryptoJS, AES, RSA, PBKDF2, Secure Session Management</p>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps and Tools</h3>
+                    <p>Git, Docker, Uvicorn, pytest, BeautifulSoup, Recharts</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="interests-section animate-fade-up delay-3">
             <h2>What Drives Me</h2>
             <div class="interests-grid">
                 <div class="interest-card animate-scale-in">
@@ -64,7 +91,7 @@ permalink: /about/
                     </div>
                     <div class="interest-content">
                         <h3>Artificial Intelligence</h3>
-                        <p>Passionate about developing AI solutions that enhance human capabilities and solve real-world problems.</p>
+                        <p>I’m passionate about leveraging AI to design solutions that solve real-world problems and push technological boundaries.</p>
                     </div>
                 </div>
                 
@@ -74,7 +101,7 @@ permalink: /about/
                     </div>
                     <div class="interest-content">
                         <h3>Data Science</h3>
-                        <p>Fascinated by the power of data analysis to uncover insights and drive informed decision-making.</p>
+                        <p>I enjoy working with complex datasets to uncover patterns, make predictions, and drive informed decisions.</p>
                     </div>
                 </div>
                 
@@ -84,10 +111,20 @@ permalink: /about/
                     </div>
                     <div class="interest-content">
                         <h3>Software Development</h3>
-                        <p>Committed to writing clean, efficient code that creates meaningful user experiences.</p>
+                        <p>Building scalable, efficient, and user-friendly applications is my focus as a developer.</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="projects-section animate-fade-up delay-4">
+            <h2>Highlighted Projects</h2>
+            <ul class="project-list">
+                <li><strong>Distributed File System:</strong> Scalable, secure system with automatic replication and data deduplication.</li>
+                <li><strong>Blockchain Supply Chain Tracker:</strong> Blockchain-based product tracking with real-time analytics.</li>
+                <li><strong>Intelligence Report Generator:</strong> Automated NLP system for summarizing news articles.</li>
+                <li><strong>Cryptography Tool:</strong> Interactive application for exploring cryptographic algorithms like AES and RSA.</li>
+            </ul>
         </div>
     </div>
 </section>
