@@ -25,16 +25,6 @@ permalink: /contact/
                     </div>
                 </div>
                 
-                <div class="contact-card animate-scale-in delay-1">
-                    <div class="card-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>LinkedIn</h3>
-                        <p>Connect with me on <a href="https://linkedin.com/in/jack-mustonen-2072b32bb/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                    </div>
-                </div>
-                
                 <div class="contact-card animate-scale-in delay-2">
                     <div class="card-icon">
                         <i class="fab fa-github"></i>
