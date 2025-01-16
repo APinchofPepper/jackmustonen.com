@@ -8,7 +8,7 @@ permalink: /resume/
     <div class="container">
         <h1 class="animate-fade-up">Resume</h1>
         <p class="subtitle animate-fade-up delay-1">Software Developer with expertise in AI/ML, Full-Stack Development, and Data-Driven Systems</p>
-        <a href="#" class="btn btn-gradient animate-fade-up delay-2">Download PDF</a>
+        <a href="/assets/resumeJanuary.pdf" class="btn btn-gradient animate-fade-up delay-2">Download PDF</a>
     </div>
 </section>
 
