@@ -56,6 +56,8 @@ permalink: /about/
             </div>
         </div>
 
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+
         <div class="skills-section animate-fade-up delay-2">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
@@ -139,6 +141,7 @@ permalink: /about/
             </div>
         </div>
 
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
 
         <div class="projects-section animate-fade-up delay-4">
             <h2>Highlighted Projects</h2>
