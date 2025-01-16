@@ -86,24 +86,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('nav');
     let lastScroll = 0;
     
+    document.addEventListener('DOMContentLoaded', function() {
+    // Enhanced navbar scroll behavior
+    const navbar = document.querySelector('nav');
+    
     window.addEventListener('scroll', _.throttle(() => {
-        const currentScroll = window.scrollY;
-        
-        // Add scrolled class for background change
-        if (currentScroll > 50) {
+        // Only add scrolled class for background change
+        if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-        
-        // Hide/show navbar based on scroll direction
-        if (currentScroll > lastScroll && currentScroll > 500) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-        
-        lastScroll = currentScroll;
     }, 100));
 
     // Enhanced project card interactions
