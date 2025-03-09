@@ -1,21 +1,53 @@
----
-layout: default
-title: Portfolio
-permalink: /portfolio/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jack Mustonen - Software Developer Portfolio">
+    <title>Portfolio | Jack Mustonen</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">JM</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/portfolio/">Portfolio</a>
+                <a href="/integrated-design/">Integrated Design</a>
+                <a href="/resume/">Resume</a>
+                <a href="/contact/">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<section class="portfolio-header">
+    <main>
+        <section class="portfolio-header">
     <div class="container">
         <h1 class="animate-fade-up">My Projects</h1>
         <p class="subtitle animate-fade-up delay-1">A collection of my most impactful work in software development and AI</p>
         
         <div class="project-filters">
             <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Machine Learning</button>
             <button class="filter-btn" data-filter="web">Web Development</button>
             <button class="filter-btn" data-filter="security">Security</button>
             <button class="filter-btn" data-filter="algorithms">Algorithms</button>
-            <button class="filter-btn" data-filter="tools">Tools & Utilities</button>
+            <button class="filter-btn" data-filter="tools">Tools &amp; Utilities</button>
             <button class="filter-btn" data-filter="systems">Distributed Systems</button>
             <button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
         </div>
@@ -126,7 +158,7 @@ permalink: /portfolio/
                     <div class="project-stats">
                         <div class="stat">
                             <i class="fas fa-shield-alt"></i>
-                            <span>AES & RSA Support</span>
+                            <span>AES &amp; RSA Support</span>
                         </div>
                         <div class="stat">
                             <i class="fas fa-code"></i>
@@ -409,7 +441,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -511,7 +543,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -633,7 +665,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -766,7 +798,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -895,7 +927,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -1037,7 +1069,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -1189,7 +1221,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -1341,7 +1373,7 @@ permalink: /portfolio/
                     </div>
                     
                     <div class="showcase-panel" id="challenges-panel">
-                        <h4>Challenges & Solutions</h4>
+                        <h4>Challenges &amp; Solutions</h4>
                         <div class="challenge-card">
                             <div class="challenge-header">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -1398,7 +1430,7 @@ permalink: /portfolio/
         <div class="cta-content animate-scale-in">
             <h2>Interested in collaborating?</h2>
             <p>I'm always open to discussing new projects and opportunities.</p>
-            <a href="{{ site.baseurl }}/contact/" class="btn btn-gradient">Get in Touch</a>
+            <a href="/contact/" class="btn btn-gradient">Get in Touch</a>
         </div>
     </div>
 </section>
@@ -1485,3 +1517,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jack Mustonen</h3>
+                <p>Software Developer | Problem Solver | Innovator</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/apinchofpepper" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 Jack Mustonen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load Lodash for utility functions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    
+    <!-- Your custom JavaScript -->
+    <script src="/assets/js/scripts.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-html.min.js" defer></script>
+</body>
+</html>

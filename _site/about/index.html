@@ -1,10 +1,42 @@
----
-layout: default
-title: About
-permalink: /about/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jack Mustonen - Software Developer Portfolio">
+    <title>About | Jack Mustonen</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">JM</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/portfolio/">Portfolio</a>
+                <a href="/integrated-design/">Integrated Design</a>
+                <a href="/resume/">Resume</a>
+                <a href="/contact/">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Hero Section with Animated Introduction -->
+    <main>
+        <!-- Hero Section with Animated Introduction -->
 <section class="about-hero">
     <div class="hero-container">
         <div class="profile-container">
@@ -310,7 +342,7 @@ permalink: /about/
                             <li>Natural Language Processing</li>
                             <li>Computer Vision Systems</li>
                             <li>Predictive Analytics</li>
-                            <li>AI Ethics & Responsible Implementation</li>
+                            <li>AI Ethics &amp; Responsible Implementation</li>
                         </ul>
                         <div class="card-flip-prompt">
                             <i class="fas fa-arrow-left"></i>
@@ -336,7 +368,7 @@ permalink: /about/
                             <li>Fault-Tolerant Architecture</li>
                             <li>Data Consistency Models</li>
                             <li>Distributed Consensus</li>
-                            <li>System Scalability & Performance</li>
+                            <li>System Scalability &amp; Performance</li>
                         </ul>
                         <div class="card-flip-prompt">
                             <i class="fas fa-arrow-left"></i>
@@ -379,7 +411,7 @@ permalink: /about/
         <div class="about-cta">
             <div class="cta-content">
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <a href="{{ site.baseurl }}/contact/" class="btn">Get In Touch</a>
+                <a href="/contact/" class="btn">Get In Touch</a>
             </div>
         </div>
     </div>
@@ -468,3 +500,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 10000);
 });
 </script>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jack Mustonen</h3>
+                <p>Software Developer | Problem Solver | Innovator</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/apinchofpepper" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 Jack Mustonen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load Lodash for utility functions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    
+    <!-- Your custom JavaScript -->
+    <script src="/assets/js/scripts.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-html.min.js" defer></script>
+</body>
+</html>
