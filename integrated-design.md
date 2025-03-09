@@ -71,102 +71,227 @@ permalink: /integrated-design/
 }
 </style>
 
-<!-- Project Overview with Floating Cards -->
-<section id="project-details" class="project-overview">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Overview</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-    .performance-showcase {
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 4rem 2rem;
-    }
-    .device-container {
-        position: relative;
-        width: 60%;
-        aspect-ratio: 16/9;
-        perspective: 1000px;
-    }
-    .device-frame {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #1a1a1a;
-        border-radius: 16px;
-        box-shadow: 
-            0 20px 40px rgba(0,0,0,0.2),
-            0 10px 20px rgba(0,0,0,0.1);
-        overflow: hidden;
-        transform: rotateX(8deg) rotateY(-12deg) scale(0.95);
-        transition: transform 0.5s ease;
-    }
-    .device-frame:hover {
-        transform: rotateX(0) rotateY(0) scale(1);
-    }
-    .device-screen {
-        position: absolute;
-        top: 2%;
-        left: 2%;
-        right: 2%;
-        bottom: 2%;
-        background: white;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    .device-screen img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-    .device-screen img:hover {
-        transform: scale(1.02);
-    }
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-overview {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .overview-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            perspective: 1000px;
+        }
+
+        .overview-content {
+            flex: 1;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .overview-content.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .overview-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            transform: translateX(50px) rotateY(-15deg);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .overview-image.visible {
+            opacity: 1;
+            transform: translateX(0) rotateY(0);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .text-gradient {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title .fas {
+            margin-left: 0.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .section-title .fas:hover {
+            transform: rotate(360deg);
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .key-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .metric {
+            text-align: center;
+            flex: 1;
+            padding: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .metric:hover {
+            transform: scale(1.05);
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .metric-value .metric-unit {
+            font-size: 0.6em;
+            margin-left: 0.2rem;
+            color: var(--secondary-color);
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .overview-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .overview-image img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .overview-grid {
+                flex-direction: column;
+            }
+
+            .overview-content, .overview-image {
+                flex: none;
+                width: 100%;
+            }
+        }
     </style>
-    <div class="container">
-        <div class="overview-grid">
-            <div class="overview-content animate-fade-right">
-                <h2 class="section-title">Project <span class="text-gradient">Overview</span></h2>
-                <p class="lead">I designed and developed <a href="https://integrateddigitaldesign.com" target="_blank" rel="noopener noreferrer">integrateddigitaldesign.com</a>, a sophisticated frontend project that showcases modern web development at its finest.</p>
-                
-                <p>This case study explores the technical challenges and innovative solutions implemented to create a high-performance, visually stunning, and accessible digital experience.</p>
-                
-                <div class="key-metrics">
-                    <div class="metric">
-                        <div class="metric-value">97<span class="metric-unit">/100</span></div>
-                        <div class="metric-label">Performance Score</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">2.4<span class="metric-unit">s</span></div>
-                        <div class="metric-label">LCP Load Time</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">0.02</div>
-                        <div class="metric-label">CLS Score</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="overview-showcase animate-fade-left">
-                <div class="performance-showcase">
-                    <div class="device-container">
-                        <div class="device-frame">
-                            <div class="device-screen">
-                                <img 
-                                    src="/assets/images/integrated-design-screenshot.png" 
-                                    alt="Integrated Digital Design Website Screenshot"
-                                >
-                            </div>
+</head>
+<body>
+    <section id="project-details" class="project-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <!-- Text Content on the Left -->
+                <div class="overview-content">
+                    <h2 class="section-title">Project <span class="text-gradient">Overview</span> <i class="fas fa-project-diagram"></i></h2>
+                    <p class="lead">I designed and developed <a href="https://integrateddigitaldesign.com" target="_blank" rel="noopener noreferrer">integrateddigitaldesign.com</a>, a sophisticated frontend project that showcases modern web development at its finest.</p>
+                    
+                    <p>This case study explores the technical challenges and innovative solutions implemented to create a high-performance, visually stunning, and accessible digital experience.</p>
+                    
+                    <div class="key-metrics">
+                        <div class="metric">
+                            <div class="metric-value">97<span class="metric-unit">/100</span></div>
+                            <div class="metric-label">Performance Score</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">2.4<span class="metric-unit">s</span></div>
+                            <div class="metric-label">LCP Load Time</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">0.02</div>
+                            <div class="metric-label">CLS Score</div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Image on the Right -->
+                <div class="overview-image">
+                    <img src="/assets/integrated-design-screenshot.png" alt="Integrated Digital Design Screenshot">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <script>
+        // Intersection Observer for Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            // Observe content and image sections
+            const contentSection = document.querySelector('.overview-content');
+            const imageSection = document.querySelector('.overview-image');
+
+            if (contentSection) observer.observe(contentSection);
+            if (imageSection) observer.observe(imageSection);
+
+            // Metric hover effects
+            const metrics = document.querySelectorAll('.metric');
+            metrics.forEach(metric => {
+                metric.addEventListener('mouseenter', (e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                });
+                metric.addEventListener('mouseleave', (e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 
 <!-- Interactive Tech Stack Showcase -->
 <section class="tech-stack-showcase">
