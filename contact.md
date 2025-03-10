@@ -3,10 +3,586 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
+
+<style>
+:root {
+  --primary-color: #0a2342;
+  --secondary-color: #2a628f;
+  --accent-color: #3e92cc;
+  --gradient-start: #0a2342;
+  --gradient-end: #3e92cc;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  --text-color: #333;
+  --light-text: #f5f8fa;
+  --bg-light: #f8fafb;
+}
+
+/* Header Styles */
+.contact-header {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: var(--light-text);
+  padding: 8rem 0 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.contact-header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.contact-header .subtitle {
+  font-size: 1.6rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+/* Animated background elements */
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  animation: float 15s infinite;
+}
+
+.shape1 {
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape2 {
+  width: 220px;
+  height: 220px;
+  top: 60%;
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.shape3 {
+  width: 180px;
+  height: 180px;
+  top: 30%;
+  right: 10%;
+  animation-delay: 4s;
+}
+
+.shape4 {
+  width: 120px;
+  height: 120px;
+  bottom: 20%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.shape5 {
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 40%;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(30px, -30px) rotate(180deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+    opacity: 0.7;
+  }
+}
+
+/* Particles animation */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Content Grid */
+.contact-content {
+  padding: 0 0 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: rgb(15, 77, 192);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Contact Cards */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  will-change: transform;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--hover-shadow);
+}
+
+.contact-card:hover::before {
+  opacity: 0.03;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(62, 146, 204, 0.3);
+}
+
+.contact-card:hover .card-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.card-icon i {
+  font-size: 1.5rem;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.card-content h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  transition: width 0.3s ease;
+}
+
+.contact-card:hover .card-content h3::after {
+  width: 100%;
+}
+
+.card-content p {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.card-content a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card-content a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.card-content a:hover::after {
+  width: 100%;
+}
+
+/* Availability Section */
+.contact-availability {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+}
+
+.contact-availability h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.contact-availability h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+}
+
+.availability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.availability-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  will-change: transform;
+}
+
+.availability-item:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--hover-shadow);
+}
+
+.item-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(62, 146, 204, 0.2);
+}
+
+.availability-item:hover .item-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.item-icon i {
+  font-size: 1.3rem;
+}
+
+.item-content h3 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.item-content p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+/* Response Time Section */
+.response-time {
+  margin-top: 3rem;
+}
+
+.response-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.response-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--hover-shadow);
+}
+
+/* Location Section */
+.location-section {
+  padding: 8rem 0 4rem 0; /* Changed from 4rem 0 to 8rem 0 4rem 0 */
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: var(--light-text);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  margin-top: 2rem;
+}
+
+.location-info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.location-info:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.location-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.location-info:hover .location-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.location-icon i {
+  font-size: 2rem;
+}
+
+.location-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.location-content p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Animation Classes */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Floating text animation for links */
+.contact-card a {
+  display: inline-block;
+  animation: float-text 3s ease-in-out infinite;
+}
+
+@keyframes float-text {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Pulsating effect */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(62, 146, 204, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(62, 146, 204, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(62, 146, 204, 0);
+  }
+}
+
+/* Typing effect */
+.typing-effect {
+  display: inline-block;
+  border-right: 3px solid var(--accent-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0%, 100% { width: 0 }
+  50% { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-color) }
+}
+
+/* Connected dots background */
+.dots-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+
+/* 3D tilt effect */
+.tilt-effect {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.1s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-header {
+    padding: 6rem 0 4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  
+  .contact-header h1 {
+    font-size: 2.8rem;
+  }
+  
+  .contact-header .subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .contact-grid {
+    gap: 2rem;
+  }
+  
+  .availability-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .location-section {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+</style>
+
 <section class="contact-header">
+    <div class="animated-bg">
+        <div class="bg-shape shape1"></div>
+        <div class="bg-shape shape2"></div>
+        <div class="bg-shape shape3"></div>
+        <div class="bg-shape shape4"></div>
+        <div class="bg-shape shape5"></div>
+        <div class="dots-bg"></div>
+    </div>
     <div class="container">
         <h1 class="animate-fade-up">Get in Touch</h1>
-        <p class="subtitle animate-fade-up delay-1">Let's discuss how we can work together</p>
+        <p class="subtitle animate-fade-up delay-1"><span class="typing-effect">Let's create something amazing together</span></p>
     </div>
 </section>
 
@@ -14,8 +590,8 @@ permalink: /contact/
     <div class="container">
         <div class="contact-grid">
             <div class="contact-info">
-                <div class="contact-card animate-scale-in">
-                    <div class="card-icon">
+                <div class="contact-card animate-scale-in tilt-effect">
+                    <div class="card-icon pulse">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div class="card-content">
@@ -25,13 +601,23 @@ permalink: /contact/
                     </div>
                 </div>
                 
-                <div class="contact-card animate-scale-in delay-2">
+                <div class="contact-card animate-scale-in delay-1 tilt-effect">
                     <div class="card-icon">
                         <i class="fab fa-github"></i>
                     </div>
                     <div class="card-content">
                         <h3>GitHub</h3>
-                        <p>Check out my code on <a href="https://github.com/APinchofPepper" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                        <p>Check out my code and projects on <a href="https://github.com/APinchofPepper" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card animate-scale-in delay-2 tilt-effect">
+                    <div class="card-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Connect & Collaborate</h3>
+                        <p>Open to discussing new opportunities and innovative projects</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +631,7 @@ permalink: /contact/
                         </div>
                         <div class="item-content">
                             <h3>Software Development</h3>
-                            <p>Full-time positions and internships</p>
+                            <p>Full-time positions and internships in tech companies focused on innovation</p>
                         </div>
                     </div>
                     
@@ -55,7 +641,7 @@ permalink: /contact/
                         </div>
                         <div class="item-content">
                             <h3>Project Collaboration</h3>
-                            <p>Open source and innovative projects</p>
+                            <p>Open source initiatives and forward-thinking projects using cutting-edge technologies</p>
                         </div>
                     </div>
                     
@@ -65,7 +651,17 @@ permalink: /contact/
                         </div>
                         <div class="item-content">
                             <h3>Networking</h3>
-                            <p>Professional connections and mentorship</p>
+                            <p>Professional connections, knowledge sharing, and community building opportunities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-item animate-scale-in delay-3">
+                        <div class="item-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="item-content">
+                            <h3>Research & AI</h3>
+                            <p>Machine learning projects and advanced computational research initiatives</p>
                         </div>
                     </div>
                 </div>
@@ -78,8 +674,8 @@ permalink: /contact/
                     <i class="fas fa-clock"></i>
                 </div>
                 <div class="card-content">
-                    <h3>Quick Response Time</h3>
-                    <p>I typically respond to messages within 24-48 hours. For urgent matters, please indicate so in your message.</p>
+                    <h3>Prompt Response Guaranteed</h3>
+                    <p>I typically respond to inquiries within 24 hours. For urgent matters, please indicate so in your message, and I'll prioritize accordingly.</p>
                 </div>
             </div>
         </div>
@@ -87,6 +683,11 @@ permalink: /contact/
 </section>
 
 <section class="location-section">
+    <div class="animated-bg">
+        <div class="bg-shape shape1"></div>
+        <div class="bg-shape shape3"></div>
+        <div class="dots-bg"></div>
+    </div>
     <div class="container">
         <div class="location-info animate-scale-in delay-3">
             <div class="location-icon">
@@ -95,8 +696,50 @@ permalink: /contact/
             <div class="location-content">
                 <h2>Location</h2>
                 <p>Based in Portland, Oregon</p>
-                <p>Available for remote work and local opportunities</p>
+                <p>Available for remote work worldwide</p>
+                <p>Open to relocation for the right opportunity</p>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animation for elements to appear on scroll
+    const animatedElements = document.querySelectorAll('.animate-fade-up, .animate-scale-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = entry.target.classList.contains('animate-fade-up') 
+                    ? 'translateY(0)' 
+                    : 'scale(1)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    animatedElements.forEach(el => observer.observe(el));
+    
+    // 3D tilt effect for cards
+    const tiltCards = document.querySelectorAll('.tilt-effect');
+    
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const xRotation = ((y - rect.height / 2) / rect.height) * 10;
+            const yRotation = ((x - rect.width / 2) / rect.width) * -10;
+            
+            this.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
+    });
+});
+</script>

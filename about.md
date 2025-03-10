@@ -44,6 +44,35 @@ permalink: /about/
     </div>
 </section>
 
+<style>
+.journey-section .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.journey-section .timeline-item:nth-child(odd) {
+    left: 46.5%;
+    padding-right: 3rem;
+}
+
+.journey-section .timeline-item:nth-child(even) {
+    left: 44%;
+    padding-left: 3rem;
+}
+
+.journey-section .timeline-item:nth-child(odd) .timeline-content {
+    left: -50%; /* Move content box to the left */
+    transform: translateX(-72%); /* Push it away from the marker */
+}
+
+.journey-section .timeline-item:nth-child(even) .timeline-content {
+    left: 50%; /* Move content box to the right */
+    transform: translateX(-40%); /* Push it away from the marker */
+}
+
+
+</style>
+
 <!-- About Me Section with Interactive Elements -->
 <section class="about-content">
     <div class="container">

@@ -4,8 +4,8 @@ title: Home
 ---
 <section class="hero">
     <div class="hero-content">
-        <h1 class="animate-fade-up">Jack Mustonen</h1>
-        <p class="animate-fade-up delay-1">Building the Future with Code</p>
+        <h1 class="animate-fade-up in-view" style="color: white; animation-delay: 0s;">Jack Mustonen</h1>
+        <p class="animate-fade-up delay-1 in-view" style="color: white;">Building the Future with Code</p>
         <div class="hero-buttons">
             <a href="{{ site.baseurl }}/portfolio/" class="btn btn-gradient">View My Work</a>
             <a href="{{ site.baseurl }}/contact/" class="btn btn-gradient">Get in Touch</a>
