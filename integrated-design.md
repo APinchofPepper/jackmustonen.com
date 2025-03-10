@@ -413,7 +413,7 @@ permalink: /integrated-design/
                             <div class="tags">
                                 <span class="tag">CSS Animations</span>
                                 <span class="tag">IntersectionObserver</span>
-                                <span class="tag">will-change</span>
+                                <span class="tag">Passive Triggers</span>
                             </div>
                         </div>
                         

@@ -25,7 +25,7 @@ permalink: /about/
                 <div class="profile-stats">
                     <div class="stat-item">
                         <span class="stat-icon"><i class="fas fa-code-branch"></i></span>
-                        <span class="stat-value">3+</span>
+                        <span class="stat-value">5+</span>
                         <span class="stat-label">Years Coding</span>
                     </div>
                     <div class="stat-item">
